@@ -1,6 +1,8 @@
 # Create Netflix- GPT APP
    - Create vite app
    - set up tailwindcss
+   - Header
+   - LoginForm
 
 
  # Features

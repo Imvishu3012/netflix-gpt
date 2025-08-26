@@ -1,10 +1,11 @@
 import React from 'react'
 import './App.css'
+import Body from './components/Body'
 function App() {
 
   return (
-    <>
-      <h1 className='text-red-700'>Hello meri duniya</h1>
+    <> 
+      <Body/>
     </>
   )
 }
