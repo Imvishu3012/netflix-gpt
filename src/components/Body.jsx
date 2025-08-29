@@ -1,21 +1,39 @@
-import React from 'react'
+import { onAuthStateChanged } from 'firebase/auth'
+import { auth } from '../utils/firebase'
+import React, { useEffect } from 'react'
 import Login from './Login'
 import { Browse } from './Browse'
 import { RouterProvider } from 'react-router-dom'
-import { lazy, Suspense } from 'react'
 import { createBrowserRouter } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
+import { addUser, removeUser } from '../utils/userSlice'
 const Body = () => {
-    const Login = lazy(()=>import('./Login'))
+    const dispatch = useDispatch();
     const AppRouter = createBrowserRouter([
         {
             path: "/",
-            element: <Suspense fallback={<div>Loading..</div>}><Login/></Suspense>
+            element: <Login/>
         },
         {
             path: "/Browse",
             element: <Browse/>
         }
     ])
+
+    useEffect(()=>{
+        onAuthStateChanged(auth, (user) => {
+  if (user) {
+   
+    const {uid, displayName, email} = user;
+    dispatch(addUser({uid:uid, displayName:displayName, email:email}))
+    // ...
+  } else {
+    dispatch(removeUser())
+    // User is signed out
+    // ...
+  }
+});
+    },[])
 
   return (
     <div>
