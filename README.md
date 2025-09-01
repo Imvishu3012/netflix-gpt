@@ -12,8 +12,22 @@
    - Create Sign Up User Account(Firebase)
    - Implement Sign Is User API (firebase)
    - Created Redux store with userSlice and Wrapped Body in Provider with appStore
-   - implemented OnAuth User for managing central system for add and remove the user account(Dispatching the Actions here)
+   -  implemented OnAuth User for managing central system for add and remove the user account(Dispatching the      Actions here)
    - Implemented the Sign Out
+   - Unsubscribe when the component unmount (unsubscribe to the onAuthStateChange callback)
+   - Added hardcoded values to the constant file(Header link)
+   - Register on TMDB and create an Application and the Access TOkens
+   - Get data from TMDB now playing movies lists API
+   - CustomHook for nowPlayingMovies
+   - Create Movie slice
+   - Update Store with Movie data
+   - Planing for mainContainer and secondaryContainer
+   - Fetch Data for Trailer Video
+   - Update Store with Trailer Video Data
+   - Embedded the Youtube video and make it autoPlay and Mute
+   - Tailwind Classed for Main Container to look awesome
+   - 
+   -
 
 
  # Features

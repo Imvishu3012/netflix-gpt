@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import { Login_Bg } from "../utils/constants";
 import Validate from "../utils/Validate";
 import Header from "./Header";
 import {
@@ -33,7 +34,6 @@ const Login = () => {
         .then((userCredential) => {
           // Signed up
           const user = userCredential.user;
-          console.log(user);
           navigate("/Browse");
           // ...
         })
@@ -53,7 +53,6 @@ const Login = () => {
         .then((userCredential) => {
           // Signed in
           const user = userCredential.user;
-          console.log(user);
           navigate("/Browse");
           // ...
         })
@@ -74,7 +73,7 @@ const Login = () => {
       <Header />
       <div className="absolute">
         <img
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/3e4bd046-85a3-40e1-842d-fa11cec84349/web/IN-en-20250818-TRIFECTA-perspective_4bd1b66d-bbb6-4bc6-ba8f-ecbba53a1278_small.jpg"
+          src={Login_Bg}
           alt="BackgroundImage"
         />
       </div>
