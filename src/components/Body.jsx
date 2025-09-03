@@ -1,4 +1,3 @@
-
 import Login from './Login'
 import React from 'react'
 import { Browse } from './Browse'
@@ -24,3 +23,4 @@ const Body = () => {
 }
 
 export default Body
+

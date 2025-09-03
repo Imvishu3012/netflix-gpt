@@ -1,4 +1,5 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
+import React from "react";
 import { Login_Bg } from "../utils/constants";
 import Validate from "../utils/Validate";
 import Header from "./Header";

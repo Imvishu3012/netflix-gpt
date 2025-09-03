@@ -5,9 +5,9 @@ import VideoBackground from './VideoBackground';
 
 const MainContainer = () => {
 
-    const movies = useSelector((store)=>store.movies?.nowPlayingMovies)  //Accessing nowPlayingMovies from Redux store
+    const movies = useSelector((store)=>store.movies?.TrendingMovies)  //Accessing nowPlayingMovies from Redux store
      if(!movies || movies.length ===0) return null;
-    const mainMovie = movies[6];
+    const mainMovie = movies[1];
     const {original_title, overview, id} = mainMovie;
 
   return (

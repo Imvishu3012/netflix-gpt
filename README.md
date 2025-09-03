@@ -26,8 +26,10 @@
    - Update Store with Trailer Video Data
    - Embedded the Youtube video and make it autoPlay and Mute
    - Tailwind Classed for Main Container to look awesome
-   - 
-   -
+   - Building the secondary component with moviesList and movieCard
+   - Using TMDB image url for scrolling cards from tmdb
+   - Like wise added Trending popular horror movie lists
+   - Netflix Project Completed and GPT part Started
 
 
  # Features

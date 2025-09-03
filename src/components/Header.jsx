@@ -24,8 +24,7 @@ const Header = () => {
       <img className="w-40" src={LOGO} alt="Header-logo" />
       {user && (<button
         onClick={handleClick}
-        className="text-white bg-red-600 px-4 py-2 rounded-lg cursor-pointer transition-all duration-100 ease-out hover:bg-red-500 active:scale-95 outline-none font-bold shadow-red-400 shadow-lg"
-      >
+className='flex items-center gap-2 bg-red-500 cursor-pointer text-white hover:bg-red-600 transition-all duration-200 font-semibold px-4 py-2 rounded-md text-md  shadow-lg hover:scale-105'>      
         Sign Out
       </button>)}
     </header>
@@ -33,3 +32,5 @@ const Header = () => {
 };
 
 export default Header;
+
+    

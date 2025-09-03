@@ -11,11 +11,10 @@ const useMovieTrailer = (movieId)=>{
       API_OPTIONS
     );
     const jsonData = await data.json();
-    const filteredVideo = jsonData.results.filter(
+    const filteredVideo = jsonData?.results?.filter(
       (video) => video.type === "Trailer" && video.site === "YouTube"
     );
-    console.log(filteredVideo)
-    const Trailer = filteredVideo[7];
+    const Trailer = filteredVideo[0];
     dispatch(addTrailer(Trailer))
   };
 
