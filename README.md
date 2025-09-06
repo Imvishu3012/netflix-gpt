@@ -30,6 +30,10 @@
    - Using TMDB image url for scrolling cards from tmdb
    - Like wise added Trending popular horror movie lists
    - Netflix Project Completed and GPT part Started
+   - Created MainGpt and GptSearchBar
+   - Added the Multi-language feature to header (FEATURE)
+   - Integrate the GPT APIs
+   -
 
 
  # Features
