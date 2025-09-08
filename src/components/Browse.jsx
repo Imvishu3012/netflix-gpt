@@ -9,7 +9,6 @@ import GptMain from "./GptMain";
 
 export const Browse = () => {
   const showGptSearch = useSelector((store) => store.gpt?.showGptSearch);
-  console.log(showGptSearch)
   useNowPlayingMovies();
   useTrendingMovies(); // Custom hook to fetch now playing movies and handle auth state
 
@@ -28,7 +27,6 @@ export const Browse = () => {
           </>
         )}
 
-        <div>Browse</div>
       </div>
     </>
   );

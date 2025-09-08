@@ -32,9 +32,13 @@
    - Netflix Project Completed and GPT part Started
    - Created MainGpt and GptSearchBar
    - Added the Multi-language feature to header (FEATURE)
-   - Integrate the GPT APIs
-   -
-
+   - # Integrate the GPT APIs (Platform openai key)
+   - (Created .env file with VITE key then fetched the data through NPM openai library in this reactVite Project)
+   - Connected the gpt with tmdb movies
+   - Added the GPTMovieResults(movieNames and movieResults) to redux store through gptslice
+   - Extracting these data(movieNames and movieResults) from the store to the MovieSuggestion component
+   - Build the MovieSuggestions based on users input
+   - Netflix GPT Completed 
 
  # Features
  -Login page
