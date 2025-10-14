@@ -17,3 +17,4 @@ export const SupportedLangs = [
   identifier: 'spanish', name: 'Spanish'
 }]
 
+

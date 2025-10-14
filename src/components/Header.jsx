@@ -39,14 +39,15 @@ const Header = () => {
       <img className="w-40" src={LOGO} alt="Header-logo" />
       {user && (
         <div className="flex gap-4">
-
-
           {showGptSearch && (
             <select
               onChange={handleLanguageChange}
               className="text-black bg-white rounded-4xl p-2 pr-2"
             >
-              {SupportedLangs.map((lang) => (          // Adding language selection dropdown
+              {SupportedLangs.map(
+                (
+                  lang // Adding language selection dropdown
+                ) => (
                   <option key={lang.identifier} value={lang.identifier}>
                     {lang.name}
                   </option>
@@ -57,14 +58,14 @@ const Header = () => {
 
           <button
             onClick={handleGptClick}
-            className="flex items-center gap-2 bg-purple-400 cursor-pointer text-white hover:bg-purple-500 transition-all duration-200 font-semibold px-4 py-2 rounded-4xl text-md  shadow-lg hover:scale-105"
+            className="flex items-center gap-2 bg-gradient-to-r text-white cursor-pointer from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 transition-all duration-200 font-semibold px-4 py-2 rounded-4xl text-md  shadow-lg hover:scale-105"
           >
             {showGptSearch ? "Back to Browse" : "GPT Search"}
           </button>
 
           <button
             onClick={handleClick}
-            className="flex items-center gap-2 bg-red-500/90 cursor-pointer text-white hover:bg-red-600 transition-all duration-200 font-semibold px-4 rounded-4xl text-md  shadow-lg hover:scale-105"
+            className="flex items-center gap-2 bg-red-600 cursor-pointer text-white hover:bg-red-700 transition-all duration-200 font-semibold px-4 rounded-4xl text-md  shadow-lg hover:scale-105"
           >
             Sign Out
           </button>
