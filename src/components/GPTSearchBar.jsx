@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import lang from "../utils/languageConstants";
 import { useDispatch, useSelector } from "react-redux";
-import { client } from "../utils/OpenaiDependency";
+import {  groqClient } from "../utils/OpenaiDependency";
 import { API_OPTIONS } from "../utils/constants";
 import { addGPTMoviesResult } from "../utils/gptSlice";
 
