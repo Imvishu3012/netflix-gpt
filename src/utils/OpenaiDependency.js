@@ -1,6 +1,6 @@
-import OpenAI from 'openai';
+import Groq from "groq-sdk";
 
-export const client = new OpenAI({
-  apiKey: import.meta.env.VITE_OPENAI_API_KEY,  // ✅ works
-  dangerouslyAllowBrowser: true,               // ⚠️ needed for frontend
+export const groqClient = new Groq({
+  apiKey: import.meta.env.VITE_GROQ_API_KEY,
+  dangerouslyAllowBrowser: true,
 });
