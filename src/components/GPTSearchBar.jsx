@@ -22,15 +22,16 @@ const GPTSearchBar = () => {
 
 
   // OpenAi COMES IN WORK BELOW
-  const searchButton =async()=>{
-    const query = "Act as a movie recommendation system for the query "+ searchText.current.value+ "Suggest strictly 5 movies only just names based on the name or genre im asking,Comma seperated like the example give ahead. Result Example: Sholey, Gadar, Singham, Kantara, Saiyaara. " 
-   const completion = await client.chat.completions.create({
-  model: "gpt-4o-mini",
-  messages: [
-    { role: 'developer', content: 'Talk like a pirate.' },
-    { role: 'user', content: query,}
-  ],
-});
+const searchButton =async()=>{
+    const query =
+      "Act as a movie recommendation system for the query " +
+      searchText.current.value +
+      "Suggest strictly 5 movies only just names based on the name or genre im asking, Comma separated like the example given ahead. Result Example: Sholey, Gadar, Singham, Kantara, Saiyaara.";
+
+    const completion = await groqClient.chat.completions.create({
+      model: "llama-3.3-70b-versatile", // Fast & good quality
+      messages: [{ role: "user", content: query }],
+    });
    const GPTMovies = completion.choices[0].message.content.split(',')
 console.log(GPTMovies);
 
